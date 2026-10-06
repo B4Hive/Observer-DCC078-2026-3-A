@@ -1,0 +1,12 @@
+@startuml
+
+hide members
+
+interface Observer <<interface>>
+class Client implements Observer
+abstract class Observable <<abstract>>
+class Attendant extends Observable
+
+Attendant -right-> "0..1" Client
+
+@enduml
